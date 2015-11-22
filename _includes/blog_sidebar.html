@@ -1,0 +1,12 @@
+<div class="4u 12u(narrower)">
+	<div id="sidebar">
+    <section>
+      <h3>Recent Posts</h3>
+      <ul class="links">
+        {% for post in site.posts | first 10 %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+</div>

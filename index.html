@@ -1,23 +1,99 @@
 ---
-layout: default
+layout: plain
 ---
+<section id="banner">
+	<header>
+		<h2>Scum Robotics: <em>An open source initiative to create awesome battle-bots</em></h2>
+	</header>
+</section>
+<section class="wrapper style1">
+	<div class="container">
+		<div class="row 200%">
+      <section class="4u 12u(narrower)">
+				<div class="box highlight">
+					<i class="icon major fa-pencil"></i>
+					<h3>Design</h3>
+					<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+				</div>
+			</section>
+			<section class="4u 12u(narrower)">
+				<div class="box highlight">
+					<i class="icon major fa-wrench"></i>
+					<h3>Build</h3>
+					<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+				</div>
+			</section>
+			<section class="4u 12u(narrower)">
+				<div class="box highlight">
+					<i class="icon major fa-shield"></i>
+					<h3>Battle</h3>
+					<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+				</div>
+			</section>
+    </div>
+  </div>
+</section>
 
-<div class="home">
+<section class="wrapper style2">
+	<div class="container">
+		<header class="major">
+			<h2>Get ready to solder</h2>
+			<p>Let's smash the competitors</p>
+		</header>
+	</div>
+</section>
 
-  <h1 class="page-heading">Posts</h1>
+<section class="wrapper style1">
+	<div class="container">
+		<div class="row">
+			<section class="6u 12u(narrower)">
+				<div class="box post">
+					<a href="#" class="image left"><img src="images/pic01.jpg" alt="" /></a>
+					<div class="inner">
+						<h3>The First Thing</h3>
+						<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+					</div>
+				</div>
+			</section>
+			<section class="6u 12u(narrower)">
+				<div class="box post">
+					<a href="#" class="image left"><img src="images/pic02.jpg" alt="" /></a>
+					<div class="inner">
+						<h3>The Second Thing</h3>
+						<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="row">
+			<section class="6u 12u(narrower)">
+				<div class="box post">
+					<a href="#" class="image left"><img src="images/pic03.jpg" alt="" /></a>
+					<div class="inner">
+						<h3>The Third Thing</h3>
+						<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+					</div>
+				</div>
+			</section>
+			<section class="6u 12u(narrower)">
+				<div class="box post">
+					<a href="#" class="image left"><img src="images/pic04.jpg" alt="" /></a>
+					<div class="inner">
+						<h3>The Fourth Thing</h3>
+						<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!-- CTA -->
+<section id="cta" class="wrapper style3">
+	<div class="container">
+		<header>
+			<h2>Check us out on GitHub</h2>
+			<a href="https://github.com/{{ site.github_username }}" class="button">Let's Go</a>
+		</header>
+	</div>
+</section>

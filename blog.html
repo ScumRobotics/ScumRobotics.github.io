@@ -1,0 +1,27 @@
+---
+layout: default
+navselect: blog
+title: Blog
+subtitle: Keep up with what the devs are doing.
+---
+
+
+
+<article>
+  <header>
+		<h2>Posts</h2>
+	</header>
+  {% for post in site.posts %}
+
+    <h3>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h3>
+    <em class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</em>
+    <div>
+      {{ post.excerpt }}
+    </div>
+    <footer>
+  		<a href="{{ post.url | prepend: site.baseurl }}" class="button">Continue Reading</a>
+  	</footer>
+  {% endfor %}
+</article>

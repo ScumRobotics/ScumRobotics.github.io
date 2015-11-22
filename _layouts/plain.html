@@ -6,21 +6,7 @@
   <body>
     <div id="page-wrapper">
       {% include header.html %}
-      <section class="wrapper style2">
-        <div class="container">
-          <header class="major">
-            <h2>{{ page.title }}</h2>
-            {% if page.subtitle %} <p>{{ page.subtitle }}</p>{% endif %}
-          </header>
-        </div>
-      </section>
-      <section class="wrapper style1">
-				<div class="container">
-					<div class="row 200%">
-            {{ content }}
-          </div>
-        </div>
-      </section>
+        {{ content }}
 
       {% include footer.html %}
     </div>
